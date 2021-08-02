@@ -1,0 +1,120 @@
+SA2 - Atividade 2 - Online - Informativo do pacote promocional
+Na atividade anterior você criou uma página que contém um catálogo de pacotes promocionais de viagens. 
+Nesta atividade você irá criar uma página que contenha o informativo de um Pacote Promocional que tenha os itens abaixo:
+
+ a) A página deve ser responsiva para as variações:
+
+Mobile - 320 px
+Tablet - 720 px
+Desktop - 1200 px
+ 
+
+b) Deve escolher um dos itens do pacote promocional para fazer o informativo do pacote promocional,
+ e fazer uma página que contenha os elementos abaixo :
+
+  
+
+Título: Nome do Pacote e preço
+Imagem principal do Local de destino com tamanho de 1100 x 500
+Subtítulo: Formas de pagamento : parcelas , desconto à vista.
+  
+
+Subtítulo: Destino
+Foto de um dos cartões postais do local escolhido
+ 
+
+Subtítulo: Locais
+Foto de um dos pontos do local escolhido
+
+
+Subtítulo: Compras
+Foto de lembrancinhas ou suvenir do local escolhido
+ 
+
+Subtítulo : Gastronomia
+Carrosel (explicado no item d) )
+ 
+
+ c) Os elementos devem ser responsivos. Para tanto deverá adicionar no cabeçalho HEAD as tag abaixo:
+
+Na meta viewport o browser identifica que os elementos podem ser responsivos.
+
+ 
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
+
+E para configurar a responsividade nos elementos HTML devemos usar o CSS, com o framework bootstrap através da tag abaixo :
+
+ 
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+ 
+
+Com as classes inseridas nas tags, os elementos deverão ficar responsivos para diversos tipos de resoluções.
+
+Nas tags de imagens img deve inserir à classe “img-fluid” ;
+Nas tags de  título h1 a classe "font-size:10vw;" ;
+Nas tags de subtítulos h2 a classe “font-size:5vw;”  .
+
+
+d) Na gastronomia deverá usar o componente Carrosel . O carrossel é um componente do Bootstrap que faz com que várias imagens possam ficar dentro de um espaço da página. Como abaixo.
+
+
+
+
+Encontrado no link : https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_carousel&stacked=h
+
+ 
+
+Para obter inserir este elemento na página deve adicionar o seguinte código na parte de gastronomia.
+
+<div class="container">
+  <h2>Carousel Example</h2>  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src=".." alt=".." style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src=".." alt=".." style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src=".." alt=".." style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+Onde está destacado com src=”..”  deverá colocar o endereço das 3 imagens sobre gastronomia escolhida e 
+a propriedade alt =".." deverá colocar o título das 3 imagens.
+
+ 

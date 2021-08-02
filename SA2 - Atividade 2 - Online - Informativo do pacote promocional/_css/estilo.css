@@ -1,0 +1,25 @@
+.imagem-carrossel{
+    height: 500px;
+   will-change: auto;
+    object-fit: cover;
+}
+.item{
+    background-color:yellow;
+}
+div img{
+    height: auto;
+    width: auto;
+}
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
+.card-columns {
+    @include media-breakpoint-only(lg) {
+    column-count: 4;
+    }
+    @include media-breakpoint-only(xl) {
+    column-count: 5;
+    }
+}
